@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList <Fragment> al;
     MyFragmentPagerAdapter adapter;
     ViewPager vPager;
-    Button btnBack, btnNext;
+    Button btnBack, btnNext1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         vPager = findViewById(R.id.viewpager1);
         btnBack = findViewById(R.id.btnBack);
-        btnNext = findViewById(R.id.btnNext);
+        btnNext1 = findViewById(R.id.btnNext);
 
 
         FragmentManager fm = getSupportFragmentManager();
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btnNext1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int max = vPager.getChildCount();
